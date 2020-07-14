@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				font-family: Helvetica, sans-serif;
+				background-color: purple;
+			}
+			h2 {
+				text-align: center;
+			}
+			button {
+				text-transform: bold;
+				font-size: 1.2vw;
+			}
+			.mySlides {
+				display: none;
+			}
+			img {
+				vertical-align: middle;
+			}
+			.slideshow-container {
+				position: relative;
+				width: 300px;
+				height: 200px;
+				margin: auto;
+			}
+			.text {
+			 	color: #f2f2f2;
+			 	font-size: 15px;
+			 	padding: 8px 12px;
+			 	position: absolute;
+			 	bottom: 8px;
+			 	width: 100%;
+			 	text-align: center;
+			}
+			.numbertext {
+			 	color: #f2f2f2;
+			 	font-size: 12px;
+			 	padding: 8px 12px;
+			 	position: absolute;
+			 	top: 0;
+			}
+			.dot {
+				height: 15px;
+			 	width: 15px;
+				margin: 0 2px;
+				background-color: #FFFF99;
+				border-radius: 50%;
+			  	display: inline-block;
+			  	transition: background-color 0.6s ease;
+			}
+			.active {
+			  	background-color: #FFFF99;			}
+			.fade {
+			  	-webkit-animation-name: fade;
+			  	-webkit-animation-duration: 1.5s;
+			  	animation-name: fade;
+			  	animation-duration: 1.5s;
+			}
+			@-webkit-keyframes fade {
+			  	from {opacity: .4}
+			  	to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  	from {opacity: .4}
+			  	to {opacity: 1}
+			}
+			@media only screen and (max-width: 300px) {
+			  	.text {font-size: 11px}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slideshow">
+			<h2>Beautiful flowers</h2>
+			<div style="width: 400px; position: relative; margin: auto; margin-bottom: 10px;">
+				<label>Enter Time In Seconds:</label>
+				<input id="second" type="text" placeholder="Enter seconds">
+				<button onclick="showSlides();">
+					Submit
+				</button>
+			</div>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+		  			<div class="numbertext">
+		  				1 / 10
+		  			</div>
+		  			<img src="https://media2.picsearch.com/is?SVJC7PAB1cThuUFmiq5tuusPPB_kBbycA5lX9rHylaY&height=341" height="190px" width="275px">
+		  			<div class="text-dark">
+		  				Sunflower
+		  			</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			2 / 10
+			  		</div>
+			  		<img src="https://media2.picsearch.com/is?1hEd5svH1utmhzuzi2-at0dk2vX1-_E5qjVVLGGN8IM&height=297" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Jasmine
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			3 / 10
+			  		</div>
+			  		<img src="https://media1.picsearch.com/is?WJRWlCP6jIqoHTimM7ZnbJ2sB3dum8j7VTE6zncLlFU&height=255" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Pansy
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			4 / 10
+			  		</div>
+			  		<img src="https://media4.picsearch.com/is?JwJ27EzFII1YAxG8CMDAb__oxhlnF88v5F1bNtD6z8g&height=341" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Daisy
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			5 / 10
+			  		</div>
+			  		<img src="https://media1.picsearch.com/is?gnjxGCNTIrM78o0oMvA9aT1QIdfazc-HaqQ5n_BXU8A&height=255" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Lotus
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			6 / 10
+			  		</div>
+			  		<img src="https://media2.picsearch.com/is?22q3NNA02UcIwXq-AOpqXAsJVd-YE96YOOwGl49SQQs&height=255" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Lily
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			7 / 10
+			  		</div>
+			  		<img src="https://media4.picsearch.com/is?kPkXRJq0HXOHhU7eqRwrubVgL-CTiZeLco_L-ks71KU&height=341" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Marigold
+
+			  		       
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			8 / 10
+			  		</div>
+			  		<img src="https://media5.picsearch.com/is?gomxqj739pEDYsgyHXoIn-87K9sbeJ6gSeQUsJ5FrYo&height=272" height="190px" width="275px">
+			  		<div class="text-dark">
+			  			Rose
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			9 / 10
+			  		</div>
+			  		<img src="https://media4.picsearch.com/is?TsYPjLQKMuacLHdQRRzhkOSUQb0TXFTw6V3LJ-trFnU&height=320" height="190px" width="275px">
+			  		<div class="text-dark">
+						Hibiscus
+			  		</div>
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			10 / 10
+			  		</div>
+			  		<img src="https://media5.picsearch.com/is?_8m1rFP0X7VFLrbc2YMerSuQYGfssBV-W97fE7tsjPg&height=255" height="190px" width="275px">
+			  		<div class="text-dark">
+						Tulip
+			  		</div>
+				</div>
+			</div>
+			<br>
+			<div style="text-align:center">
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+			</div>
+		</div>
+		<hr>
+		<div id="calculator" style="margin-top: 5px;">
+			<h2>Calculator</h2>
+			<div style="width: 200px; position: relative; margin: auto;">
+				<label>Enter no 1:</label>
+				<input style="margin-bottom: 5px;" type="text" id="num1">
+				<label>Enter no 2:</label>
+				<input style="margin-bottom: 5px;" type="text" id="num2">
+				<label>ANSWERE:</label>
+				<input type="text" id="res" style="margin-bottom: 5px;">
+			</div>
+			<div style="margin-top: 5px; margin-left: 466px; margin-right: 466px; position: relative; width: 400px;">
+				<button onclick="addition();">Addition</button>
+				<button onclick="subtraction();">Subtraction</button>
+				<button onclick="multiplication();">Multiplication</button>
+				<button onclick="division();">Division</button>
+			</div>
+		</div>
+		<hr>
+		<div id="validation">
+			<h2>Email Validation</h2>
+			<div style="position: relative; margin: auto; width: 250px;">
+				<label>Email:</label>
+				<input type="email" placeholder="Enter Email" id="myemail" onkeyup="validate();">
+			</div>
+		</div>
+		
+		<script>
+			var slideIndex = 0;
+			function showSlides() {
+				if (document.getElementById("second").value) {
+					var x = document.getElementById("second").value;
+				}
+				else {
+					var x = 100000000000;
+				}
+			  	var i;
+			  	var slides = document.getElementsByClassName("mySlides");
+			  	var dots = document.getElementsByClassName("dot");
+			  	for (i = 0; i < slides.length; i++) {
+			    	slides[i].style.display = "none";
+			  	}
+			  	slideIndex++;
+			  	if (slideIndex > slides.length) {
+			  		slideIndex = 1
+			  	}
+			  	for (i = 0; i < dots.length; i++) {
+			    	dots[i].className = dots[i].className.replace(" active", "");
+			  	}
+			  	slides[slideIndex-1].style.display = "block";
+			  	dots[slideIndex-1].className += " active";
+			  	setTimeout(showSlides, x * 1000);
+			}
+			function addition() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a + b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function subtraction() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a - b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function multiplication() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a * b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function division() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a / b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function validate() {
+				var myemail = document.getElementById("myemail");
+				var reg = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+            	if (reg.test(myemail.value) == true) {
+            		myemail.style.background = "green";
+            	}
+            	if (reg.test(myemail.value) == false) {
+                	myemail.style.background = "red";
+            	}
+			}
+		</script>
+	</body>
+</html>
